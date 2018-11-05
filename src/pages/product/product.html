@@ -1,0 +1,117 @@
+<!--
+  Generated template for the ProductPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="Navigation">
+    <ion-title>Banking Accounts</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background-color: #012333">
+  <div>
+    <ion-card *ngIf="showTile">
+
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/Absa.jpg">
+        </ion-avatar>
+        <h2>{{product?.AccountName}}</h2>
+        <p>As At: {{product?.LastModified | date:'dd-MM-yyyy'}}</p>
+      </ion-item>
+
+      <ion-card-content>
+        <p>Unpaid: R {{product?.TotalAmount}}</p><br>
+        <p>{{product?.DaysPastDue}} days overdue.</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-start clear small color="Navigation">
+        <ion-icon name="ios-card-outline"></ion-icon>
+       <button style="background-color: white" color="navigation"(click)="pay()"[navPush]="pushPage">Pay</button>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-start clear small color="Navigation">
+        <ion-icon name="ios-send-outline"></ion-icon>
+        <button style="background-color: white" color="navigation"(click)="arrange()"[navPush]="pushPage">Arrange</button>
+          </button>
+        </ion-col>
+
+
+      </ion-row>
+
+    </ion-card>
+
+
+    <ion-card>
+
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/FNB.jpg">
+        </ion-avatar>
+        <h2>Vehicle Finance</h2>
+        <p>As At: September 17 2018</p>
+      </ion-item>
+
+      <ion-card-content>
+        <p>Unpaid: R 430.25</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-start clear small color="Navigation">
+        <ion-icon name="ios-card-outline"></ion-icon>
+        <button style="background-color: white" color="navigation"(click)="pay()"[navPush]="pushPage">Pay</button>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-start clear small color="Navigation">
+        <ion-icon name="ios-send-outline"></ion-icon>
+        <button style="background-color: white" color="navigation"(click)="arrange()"[navPush]="pushPage">Arrange</button>
+          </button>
+        </ion-col>
+
+
+      </ion-row>
+
+    </ion-card>
+
+    <ion-card>
+
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/FNB.jpg">
+        </ion-avatar>
+        <h2>Home Loan</h2>
+        <p>As At: September 17 2018</p>
+      </ion-item>
+
+      <ion-card-content>
+        <p>Unpaid: R 430.25</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-start clear small color="Navigation">
+        <ion-icon name="ios-card-outline"></ion-icon>
+        <button style="background-color: white" color="navigation"(click)="pay()"[navPush]="pushPage">Pay</button>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-start clear small color="Navigation">
+        <ion-icon name="ios-send-outline"></ion-icon>
+        <button style="background-color: white" color="navigation"(click)="pay()"[navPush]="pushPage">Arrange</button>
+          </button>
+        </ion-col>
+
+
+      </ion-row>
+
+    </ion-card>

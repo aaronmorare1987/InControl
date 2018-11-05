@@ -1,11 +1,78 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
+  <ion-navbar color="Navigation">
+
+    <ion-title text-align="Center">Settings</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <h5 style="text-align:center">Personal Details</h5>
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/person.jpg">
+        <ion-icon name="md-create"></ion-icon>
+      </ion-avatar>
+      <h2>Thami Ngubeni</h2>
+      <p>20 April 2001</p>
+    </ion-item>
+
+
+  </ion-card>
+  <h5 style="text-align:center">Card Details</h5>
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/Maestro.jpg" style="width: 38px; height: 30px;">
+        <ion-icon name="md-create"></ion-icon>
+      </ion-avatar>
+      <h2>Absa</h2>
+      <p>....272</p>
+    </ion-item>
+
+  </ion-card>
+  <h5 style="text-align:center">Application</h5>
+  <ion-card>
+
+    <ion-item>
+
+      <ion-label>Auto-Pay</ion-label>
+      <ion-toggle [(ngModel)]="pepperoni" color="Navigation"></ion-toggle>
+
+
+    </ion-item>
+    <p style="text-align:center">Pay your defaults automatically proportinate to all companies owed.</p>
+  </ion-card>
+
+   <ion-card>
+
+    <ion-item>
+
+      <ion-label>Use Rewards</ion-label>
+      <ion-toggle [(ngModel)]="sausage" color="Navigation" disabled="false"></ion-toggle>
+
+
+    </ion-item>
+    <p style="text-align:center">Pay your defaults using your reward points proportinate to all companies owed.</p>
+  </ion-card>
+
+   <ion-card>
+
+    <ion-item>
+
+      <ion-label>Mute Messages</ion-label>
+      <ion-toggle [(ngModel)]="mushrooms"color="Navigation"></ion-toggle>
+
+
+    </ion-item>
+    <p style="text-align:center">This will disable messages from service providers.</p>
+  </ion-card>
+
+  
+
+  
 
 </ion-content>
